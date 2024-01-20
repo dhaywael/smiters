@@ -1,0 +1,667 @@
+/* Paid Memberships Pro styles
+----------------------------------------------------------------- */
+
+@import "../../../../css/_mixins.scss";
+@import "../../../../css/_theme-vars.scss";
+@import "../../css/_skin-vars.scss";
+
+
+
+/* Buttons 
+--------------------------------------------- */
+.pmpro_btn, 
+.pmpro_btn:link,
+.pmpro_content_message a, 
+.pmpro_content_message a:link,
+.pmpro_btn.pmpro_btn-submit,
+.pmpro_btn.pmpro_btn-cancel {
+	@include theme_button_filled;
+}
+
+.pmpro_btn:hover, 
+.pmpro_btn:focus,
+a.pmpro_btn:hover,
+.entry-content a.pmpro_btn:hover,
+.pmpro_checkout .pmpro_btn:hover,
+.pmpro_checkout .pmpro_btn:focus,
+.pmpro_content_message a:hover,
+.pmpro_content_message a:focus, 
+.pmpro_btn.pmpro_btn-submit:hover,
+.pmpro_btn.pmpro_btn-cancel:hover, 
+.entry-content a.pmpro_btn.pmpro_btn-cancel:hover {
+	@include theme_button_colors_hover;
+}
+.pmpro_btn.pmpro_btn-cancel,
+.pmpro_btn.pmpro_btn-cancel:link,
+.pmpro_btn.pmpro_btn-cancel:hover,
+.entry-content a.pmpro_btn.pmpro_btn-cancel:hover {
+	text-decoration: none;
+	border: none;
+}
+.pmpro_btn + .pmpro_btn {
+	margin-left: 10px;
+}
+.pmpro_btn:focus,
+.pmpro_content_message a:focus {
+	outline: none;
+}
+
+/* Inputs */
+form.pmpro_form input[type="text"],
+form.pmpro_form input[type="password"],
+form.pmpro_form input[type="email"],
+form.pmpro_form input[type="number"],
+form.pmpro_form textarea, 
+form.pmpro_form select,
+#loginform input[type="text"], 
+#loginform input[type="password"] {
+	width: 100%;
+	max-width: none;
+}
+
+/* Navigation 
+--------------------------------------------- */
+.pmpro_actions_nav {
+	a {
+		@include font(16px, 22px, 600);
+		color: var(--theme-color-text_dark);
+		&:hover {
+			color: var(--theme-color-text_link);
+		}
+	}
+} 
+.pmpro_actionlinks {
+	@include flex;
+	@include flex-align-items(baseline);
+	gap: 5px;
+	line-height: 1;
+	color: var(--theme-color-text_light);
+	a {
+		@include font(15px, 21px, 400);
+		color: var(--theme-color-text_light);
+		&:hover {
+			color: var(--theme-color-text_dark);
+		}
+		&#pmpro_actionlink-levels {
+			margin-top: 1.6em;
+			@include font(16px, 22px, 600);
+			color: var(--theme-color-text_dark);
+			&:hover {
+				color: var(--theme-color-text_link);
+			}
+		}
+	}
+} 
+.pmpro_actions_nav {
+	@include flex;
+	@include flex-align-items(baseline);
+	gap: 18px;
+	line-height: 1;
+    text-align: left;
+    margin-bottom: 0;
+}
+.pmpro_actions_nav-right {
+    width: auto;
+    float: none;
+    text-align: left;
+}
+
+/* Small links */
+.pmpro_billing_wrap small,
+.pmpro_checkout h3 span.pmpro_checkout-h3-msg a {
+    font-size: 15px;
+    font-style: normal;
+    text-transform: capitalize;
+	color: var(--theme-color-text_link);
+
+	&:hover {
+		color: var(--theme-color-text_dark);
+	}
+}
+
+
+/* Table 
+--------------------------------------------- */
+.pmpro_table {    
+	width: 100%;
+	table-layout: fixed;
+	+ .pmpro_actions_nav {
+		margin-top: 1.6em;
+	}
+	th {
+		padding: 0.8em 2em;
+		@include font(16px, 24px, 700);
+	}
+	td {
+		padding: 1em 2em;
+		@include font(17px, 24px, 500);
+	}
+	th,
+	td {
+		text-align: left;
+	}
+	strong {
+		font-weight: 700;
+	}
+    .pmpro_btn {
+		display: inline-flex !important;
+		padding: 9px 24px 10px;
+	}
+	.pmpro_actionlinks {
+		margin: 3px 0 0;
+	}
+}
+
+
+/* Account 
+--------------------------------------------- */
+#pmpro_account {
+	.pmpro_box {
+		border: none;
+		padding: 0;
+		margin: 0;
+		+ .pmpro_box {
+			margin: 65px 0 0;
+		}
+		h2 {
+			@include font(2.059em, 1.086em);
+			margin-top: 0;
+			margin-bottom: 1.3em;
+		}
+		h3 {
+			margin-top: 0;
+			margin-bottom: 0.739em;
+		}
+		p {
+			margin: 0;
+		}
+		&#pmpro_account-profile {
+			> p {
+				@include font(19px, 24px, 700);
+				color: var(--theme-color-text_dark);
+				+ ul {
+					margin-top: 1em;
+				}
+			}
+			h2 {
+				margin-bottom: 1.1em;
+			}
+			ul {
+				padding-left: 0;
+				list-style-type: none;
+				> li {
+					font-weight: 500;
+					strong {
+						margin-right: 5px;
+						font-weight: 400;
+						color: var(--theme-color-text_light);
+					}
+					+ li {
+						margin-top: 5px;
+					}
+				}
+			}
+			.pmpro_actionlinks {
+				gap: 16px;
+				margin-top: 1.6em;
+				a {
+					@include font(16px, 21px, 500);
+					color: var(--theme-color-text_dark);
+					&:hover {
+						color: var(--theme-color-text_link);
+					}
+				}
+			}
+		}
+		&#pmpro_account-invoices {
+			td {
+				a {
+					color: var(--theme-color-text);	
+					&:hover {
+						color: var(--theme-color-text_dark);	
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Billing 
+--------------------------------------------- */
+.pmpro_billing_wrap {
+	margin-bottom: 0;
+	hr {
+		display: none;
+	}
+	ul {
+		  li {
+			font-weight: 500;
+			color: var(--theme-color-text_dark);
+			strong {
+				font-weight: 400;
+				color: var(--theme-color-text_light);
+			}
+		}
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+	.pmpro_actions_nav {
+		margin-top: 1em;
+	}
+}
+
+
+/* Profile & Change Password 
+--------------------------------------------- */
+.pmpro_member_profile_edit_wrap,
+.pmpro_change_password_wrap {
+	margin-bottom: 0;
+}
+form.pmpro_form {
+	.lite {
+		color: var(--theme-color-text_light);
+	}
+	label {
+		@include font(18px, 24px, 700);
+		margin-bottom: 10px;
+		color: var(--theme-color-text_dark);
+	}
+	.pmpro_member_profile_edit-fields {
+		margin: 0 calc(-1 * var(--theme-var-grid_gap)) calc(-1 * var(--theme-var-grid_gap)) 0;
+	
+		div {
+			width: calc(50% - 3px);
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+			padding: 0 var(--theme-var-grid_gap) var(--theme-var-grid_gap) 0;
+			box-sizing: border-box;
+	
+			input {
+				width: 100%;
+				max-width: 100%;
+			}
+			.lite {
+				margin-top: 1.6em;
+				margin-bottom: 0;
+				@include font(14px, 21px);
+			}
+		}
+	}
+	.pmpro_change_password-fields div {
+		margin-bottom: 30px;
+	}
+	.pmpro_submit,
+	.pmpro_checkout {
+		hr {
+			display: none;
+		}
+	}
+	.pmpro_submit {
+		@include flex;
+		@include flex-direction(column);
+		margin-top: 1.5em;
+	}
+	#pmpro_processing_message {
+		display: none;
+	}
+} 
+
+
+/* Log In 
+--------------------------------------------- */
+.pmpro_login_wrap {
+	margin-bottom: 0;
+	h2 {
+		margin-top: 0;
+	}
+	hr {
+	    display: none;
+	}
+	#loginform {
+		p {
+			margin-bottom: 20px;
+		}
+		label {
+			margin-bottom: 10px;
+			font-weight: 700;
+			color: var(--theme-color-text_dark);
+		}
+		.login-remember {
+			label {
+				margin-top: 10px;
+				margin-bottom: 0;
+				@include font(15px, 22px, inherit);
+				position: relative;
+				padding-left: 1.5em;
+				padding-bottom: 0 !important;
+				display: inline-block;
+				vertical-align: top;
+				color: var(--theme-color-text);
+				> input[type="checkbox"] {
+					position: static !important;
+					clip: auto;
+					width: 0;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					&:before {
+						content: '';
+						font-family: $theme_icons;
+						@include font(7px, '', 400);
+						display: block;
+						text-align: center;
+						border: 1px solid var(--theme-color-bd_color);
+						color: var(--theme-color-text_dark);
+						@include box(16px, 16px, 15px);
+						@include abs-lt(0, 0.45em);
+						@include border-box;
+						@include border-radius(4px);
+						@include transition-all(0.3s);
+						cursor: pointer;
+					}
+					&:hover:before {
+						border-color: var(--theme-color-text_dark);
+					}
+					&:checked:before,
+					&:checked:before {
+						content: '\e9f6';
+					}
+				}
+			}
+		}
+		.login-submit {
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.pmpro_logged_in_welcome_wrap {
+	h3 {
+		margin-top: 0;
+		a {
+			display: inline;
+		}
+	}
+}
+.pmpro_lost_password_wrap {
+	margin-bottom: 0;
+	h2 {
+		margin-top: 0;
+	}
+	hr {
+	    display: none;
+	}
+	.pmpro_actions_nav {
+		margin-top: 1.6em;
+	}
+}
+.pmpro_member_log_out {
+	a {
+		margin-top: 10px;
+		display: inline-flex;
+		padding: 18px 40px 19px;
+		color: var(--theme-color-inverse_link);
+		background-color: var(--theme-color-text_link);
+		@include border-radius(10px);
+		@include transition(color .3s ease, background-color .3s ease);
+		&:hover {
+			color: var(--theme-color-inverse_link);
+			background-color: var(--theme-color-text_hover);
+		}
+	}
+} 
+
+/* Messages 
+--------------------------------------------- */
+.pmpro-no-access {
+	min-height: 100vh;
+	@include flex;
+	@include flex-direction(column);
+	@include flex-justify-content(center);
+	@include flex-align-items(center);
+}
+.pmpro_content_message {
+	margin: calc( var(--theme-var-grid_gap) * 2 ) calc( var(--theme-var-grid_gap) / 2 );
+	text-align: center;
+	color: var(--theme-color-text_dark);
+	.pmpro_btn,
+	a {
+		user-select: auto;
+	    margin: 18px 5px 0 !important;
+		@include theme_button_colors (!important);
+
+		&:hover {
+			@include theme_button_colors_hover (!important);
+		}
+	}
+}
+.pmpro_message{
+	 padding: 15px 20px;
+	@include font(16px, 1.5em, 400);
+	border: none;
+	@include border-radius(6px);
+	strong {
+		font-weight: 700;
+	}
+	a {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&:first-child {
+		margin-top: 0;
+		margin-bottom: var(--theme-var-grid_gap);
+	}
+	&:last-child {
+		margin-top: var(--theme-var-grid_gap);
+		margin-bottom: 0;
+	}
+	&.pmpro_success,
+	&.pmpro_alert,
+	&.pmpro_error {
+		a {
+			color: currentColor;
+		}
+	}
+}
+#pmpro_message_bottom {
+	margin-bottom: 2em;
+}
+
+/* Invoice 
+--------------------------------------------- */
+.pmpro_invoice_wrap {
+	.pmpro_table {
+		td {
+			a {
+				color: var(--theme-color-text);
+				&:hover {
+					color: var(--theme-color-text_dark);
+				}
+			}
+		}
+	}
+	h3 {
+		margin-top: 0;
+	}
+	hr {
+		display: none;
+	    margin: 20px 0 !important;
+	}
+	.pmpro_invoice-total {
+		p:last-child {
+			margin-bottom: 0;
+		}
+	} 
+	.pmpro_actions_nav {
+		margin-top: 1.6em;
+	}
+	.pmpro_actions_nav-left {
+	    float: none;
+	    width: auto;
+		+ .pmpro_actions_nav-right {
+			float: right;
+		}
+	}
+}
+
+/* Cancel 
+--------------------------------------------- */
+.pmpro_cancel_wrap {
+	h2 {
+		@include font(2.059em, 1.086em);
+		margin-top: 0;
+		margin-bottom: 1.3em;
+	}
+	.pmpro_cancel-membership-cancel {
+		a {
+			color: var(--theme-color-text);
+			&:hover {
+				color: var(--theme-color-text_dark);
+			}
+		}
+	}
+}
+
+/* Checkout
+--------------------------------------------- */
+#pmpro_form {
+	.pmpro_checkout {
+		h2 {
+			@include font(2.059em, 1.086em);
+			margin: 0;
+			span.pmpro_checkout-h2-name {
+				display: inline-block;
+				margin: 0 0.5em 1em 0;
+			}
+			span.pmpro_checkout-h2-msg {
+				margin: 0;
+				display: inline-block;
+				@include font(15px, 19px, 400, normal);
+				letter-spacing: 0;
+				a {
+					color: var(--theme-color-text_light);
+					&:hover {
+						color: var(--theme-color-text_dark);
+					}
+				}
+			}
+		}
+		.pmpro_checkout-fields {
+			.pmpro_level_name_text {
+				margin-bottom: 1.5em;
+				@include font(19px, 28px, 400);
+				color: var(--theme-color-text);
+				strong {
+					font-weight: 700;
+					color: var(--theme-color-text_dark);
+				}
+			}
+			.pmpro_level_description_text {
+				margin-bottom: 1.5em;
+				color: var(--theme-color-text_light);
+				ul {
+					margin-bottom: 0;
+					@include font(16px, 1.5em, 400);
+					li + li {
+						margin-top: 10px;
+					}
+				}
+			}
+			#pmpro_level_cost {
+				.pmpro_level_cost_text {
+					margin-bottom: 0.8em;
+					@include font(19px, 28px, 400);
+					color: var(--theme-color-text);
+					p {
+						margin: 0;
+					}
+					strong {
+						font-weight: 700;
+						color: var(--theme-color-text_dark);
+					}
+				}
+				.pmpro_level_expiration_text {
+					margin-bottom: 1em;
+					@include font(16px, 1.5em, 400);
+					color: var(--theme-color-text_light);
+					p {
+						margin: 0;
+					}
+				}
+			}
+		}
+		.pmpro_checkout-field {
+			position: relative;
+			.pmpro_asterisk {
+				@include abs-rt(5px);
+				abbr {
+					color: var(--theme-color-text_light);
+				}
+			}
+		}
+		strong {
+			font-weight: 700;
+		}
+	} 
+}
+.pmpro_checkout_gateway-none {
+	#pmpro_form {
+		.pmpro_checkout {
+			margin-top: 0;
+			h3 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+/* Confirmation */
+.pmpro_confirmation_wrap {
+	.pmpro_actions_nav {
+		margin-top: 1em;
+	}
+	.pmpro_invoice_details {
+		.pmpro_invoice-total,
+		.pmpro_invoice-payment-method {
+			strong {
+				font-weight: 700;
+				color: var(--theme-color-text_dark);
+			}
+		}
+		.pmpro_invoice-total {
+			.pmpro_price_part-total {
+				margin-top: 10px;
+				padding-top: 10px;
+				border-color: var(--theme-color-bd_color);
+			}
+		}
+	}
+	h2 {
+		margin-top: 0.7em;
+		margin-bottom: 0.7em;
+		@include font(2.059em, 1.086em);
+	}
+	ul {
+		li {
+			font-weight: 500;
+			color: var(--theme-color-text);
+			strong {
+				font-weight: 400;
+				color: var(--theme-color-text_light);
+			}
+		}
+	}
+	hr {
+		display: none;
+	}
+}
+.pmpro_a-print {
+	@include font(12px, 17px);
+	color: var(--theme-color-text_dark);
+	&:hover {
+		color: var(--theme-color-text_dark);
+	}
+}

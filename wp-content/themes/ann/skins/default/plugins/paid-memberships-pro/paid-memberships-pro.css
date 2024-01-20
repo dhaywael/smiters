@@ -1,0 +1,755 @@
+/* Paid Memberships Pro styles
+----------------------------------------------------------------- */
+/* Buttons 
+--------------------------------------------- */
+.pmpro_btn,
+.pmpro_btn:link,
+.pmpro_content_message a,
+.pmpro_content_message a:link,
+.pmpro_btn.pmpro_btn-submit,
+.pmpro_btn.pmpro_btn-cancel {
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: top;
+  font-size: var(--theme-font-button_font-size);
+  line-height: var(--theme-font-button_line-height);
+  font-weight: var(--theme-font-button_font-weight);
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  text-transform: var(--theme-font-button_text-transform);
+  letter-spacing: var(--theme-font-button_letter-spacing);
+  white-space: nowrap;
+  height: auto;
+  max-width: 100%;
+  color: var(--theme-color-inverse_link);
+  border-color: var(--theme-color-text_link);
+  background-color: var(--theme-color-text_link);
+  padding: 18px 40px 19px;
+  border-width: 0 !important;
+}
+.pmpro_btn.sc_button_shadow,
+.pmpro_btn:link.sc_button_shadow,
+.pmpro_content_message a.sc_button_shadow,
+.pmpro_content_message a:link.sc_button_shadow,
+.pmpro_btn.pmpro_btn-submit.sc_button_shadow,
+.pmpro_btn.pmpro_btn-cancel.sc_button_shadow {
+  -webkit-box-shadow: 0 7px 25px var(--theme-color-text_link_02);
+  -ms-box-shadow: 0 7px 25px var(--theme-color-text_link_02);
+  box-shadow: 0 7px 25px var(--theme-color-text_link_02);
+}
+.pmpro_btn.sc_button_shadow.color_style_dark,
+.pmpro_btn:link.sc_button_shadow.color_style_dark,
+.pmpro_content_message a.sc_button_shadow.color_style_dark,
+.pmpro_content_message a:link.sc_button_shadow.color_style_dark,
+.pmpro_btn.pmpro_btn-submit.sc_button_shadow.color_style_dark,
+.pmpro_btn.pmpro_btn-cancel.sc_button_shadow.color_style_dark {
+  -webkit-box-shadow: 0 7px 25px var(--theme-color-text_dark_02);
+  -ms-box-shadow: 0 7px 25px var(--theme-color-text_dark_02);
+  box-shadow: 0 7px 25px var(--theme-color-text_dark_02);
+}
+.pmpro_btn.sc_button_shadow.color_style_link2,
+.pmpro_btn:link.sc_button_shadow.color_style_link2,
+.pmpro_content_message a.sc_button_shadow.color_style_link2,
+.pmpro_content_message a:link.sc_button_shadow.color_style_link2,
+.pmpro_btn.pmpro_btn-submit.sc_button_shadow.color_style_link2,
+.pmpro_btn.pmpro_btn-cancel.sc_button_shadow.color_style_link2 {
+  -webkit-box-shadow: 0 7px 25px var(--theme-color-text_link2_02);
+  -ms-box-shadow: 0 7px 25px var(--theme-color-text_link2_02);
+  box-shadow: 0 7px 25px var(--theme-color-text_link2_02);
+}
+.pmpro_btn.sc_button_shadow.color_style_link3,
+.pmpro_btn:link.sc_button_shadow.color_style_link3,
+.pmpro_content_message a.sc_button_shadow.color_style_link3,
+.pmpro_content_message a:link.sc_button_shadow.color_style_link3,
+.pmpro_btn.pmpro_btn-submit.sc_button_shadow.color_style_link3,
+.pmpro_btn.pmpro_btn-cancel.sc_button_shadow.color_style_link3 {
+  -webkit-box-shadow: 0 7px 25px var(--theme-color-text_link3_02);
+  -ms-box-shadow: 0 7px 25px var(--theme-color-text_link3_02);
+  box-shadow: 0 7px 25px var(--theme-color-text_link3_02);
+}
+
+.pmpro_btn:hover,
+.pmpro_btn:focus,
+a.pmpro_btn:hover,
+.entry-content a.pmpro_btn:hover,
+.pmpro_checkout .pmpro_btn:hover,
+.pmpro_checkout .pmpro_btn:focus,
+.pmpro_content_message a:hover,
+.pmpro_content_message a:focus,
+.pmpro_btn.pmpro_btn-submit:hover,
+.pmpro_btn.pmpro_btn-cancel:hover,
+.entry-content a.pmpro_btn.pmpro_btn-cancel:hover {
+  color: var(--theme-color-inverse_link);
+  border-color: var(--theme-color-text_hover);
+  background-color: var(--theme-color-text_hover);
+}
+
+.pmpro_btn.pmpro_btn-cancel,
+.pmpro_btn.pmpro_btn-cancel:link,
+.pmpro_btn.pmpro_btn-cancel:hover,
+.entry-content a.pmpro_btn.pmpro_btn-cancel:hover {
+  text-decoration: none;
+  border: none;
+}
+
+.pmpro_btn + .pmpro_btn {
+  margin-left: 10px;
+}
+
+.pmpro_btn:focus,
+.pmpro_content_message a:focus {
+  outline: none;
+}
+
+/* Inputs */
+form.pmpro_form input[type="text"],
+form.pmpro_form input[type="password"],
+form.pmpro_form input[type="email"],
+form.pmpro_form input[type="number"],
+form.pmpro_form textarea,
+form.pmpro_form select,
+#loginform input[type="text"],
+#loginform input[type="password"] {
+  width: 100%;
+  max-width: none;
+}
+
+/* Navigation 
+--------------------------------------------- */
+.pmpro_actions_nav a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_actions_nav a:hover {
+  color: var(--theme-color-text_link);
+}
+
+.pmpro_actionlinks {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  gap: 5px;
+  line-height: 1;
+  color: var(--theme-color-text_light);
+}
+.pmpro_actionlinks a {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--theme-color-text_light);
+}
+.pmpro_actionlinks a:hover {
+  color: var(--theme-color-text_dark);
+}
+.pmpro_actionlinks a#pmpro_actionlink-levels {
+  margin-top: 1.6em;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_actionlinks a#pmpro_actionlink-levels:hover {
+  color: var(--theme-color-text_link);
+}
+
+.pmpro_actions_nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  gap: 18px;
+  line-height: 1;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.pmpro_actions_nav-right {
+  width: auto;
+  float: none;
+  text-align: left;
+}
+
+/* Small links */
+.pmpro_billing_wrap small,
+.pmpro_checkout h3 span.pmpro_checkout-h3-msg a {
+  font-size: 15px;
+  font-style: normal;
+  text-transform: capitalize;
+  color: var(--theme-color-text_link);
+}
+.pmpro_billing_wrap small:hover,
+.pmpro_checkout h3 span.pmpro_checkout-h3-msg a:hover {
+  color: var(--theme-color-text_dark);
+}
+
+/* Table 
+--------------------------------------------- */
+.pmpro_table {
+  width: 100%;
+  table-layout: fixed;
+}
+.pmpro_table + .pmpro_actions_nav {
+  margin-top: 1.6em;
+}
+.pmpro_table th {
+  padding: 0.8em 2em;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.pmpro_table td {
+  padding: 1em 2em;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.pmpro_table th,
+.pmpro_table td {
+  text-align: left;
+}
+.pmpro_table strong {
+  font-weight: 700;
+}
+.pmpro_table .pmpro_btn {
+  display: inline-flex !important;
+  padding: 9px 24px 10px;
+}
+.pmpro_table .pmpro_actionlinks {
+  margin: 3px 0 0;
+}
+
+/* Account 
+--------------------------------------------- */
+#pmpro_account .pmpro_box {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+#pmpro_account .pmpro_box + .pmpro_box {
+  margin: 65px 0 0;
+}
+#pmpro_account .pmpro_box h2 {
+  font-size: 2.059em;
+  line-height: 1.086em;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+#pmpro_account .pmpro_box h3 {
+  margin-top: 0;
+  margin-bottom: 0.739em;
+}
+#pmpro_account .pmpro_box p {
+  margin: 0;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile > p {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--theme-color-text_dark);
+}
+#pmpro_account .pmpro_box#pmpro_account-profile > p + ul {
+  margin-top: 1em;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile h2 {
+  margin-bottom: 1.1em;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile ul > li {
+  font-weight: 500;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile ul > li strong {
+  margin-right: 5px;
+  font-weight: 400;
+  color: var(--theme-color-text_light);
+}
+#pmpro_account .pmpro_box#pmpro_account-profile ul > li + li {
+  margin-top: 5px;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks {
+  gap: 16px;
+  margin-top: 1.6em;
+}
+#pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks a {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--theme-color-text_dark);
+}
+#pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks a:hover {
+  color: var(--theme-color-text_link);
+}
+#pmpro_account .pmpro_box#pmpro_account-invoices td a {
+  color: var(--theme-color-text);
+}
+#pmpro_account .pmpro_box#pmpro_account-invoices td a:hover {
+  color: var(--theme-color-text_dark);
+}
+
+/* Billing 
+--------------------------------------------- */
+.pmpro_billing_wrap {
+  margin-bottom: 0;
+}
+.pmpro_billing_wrap hr {
+  display: none;
+}
+.pmpro_billing_wrap ul li {
+  font-weight: 500;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_billing_wrap ul li strong {
+  font-weight: 400;
+  color: var(--theme-color-text_light);
+}
+.pmpro_billing_wrap p:last-child {
+  margin-bottom: 0;
+}
+.pmpro_billing_wrap .pmpro_actions_nav {
+  margin-top: 1em;
+}
+
+/* Profile & Change Password 
+--------------------------------------------- */
+.pmpro_member_profile_edit_wrap,
+.pmpro_change_password_wrap {
+  margin-bottom: 0;
+}
+
+form.pmpro_form .lite {
+  color: var(--theme-color-text_light);
+}
+form.pmpro_form label {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--theme-color-text_dark);
+}
+form.pmpro_form .pmpro_member_profile_edit-fields {
+  margin: 0 calc(-1 * var(--theme-var-grid_gap)) calc(-1 * var(--theme-var-grid_gap)) 0;
+}
+form.pmpro_form .pmpro_member_profile_edit-fields div {
+  width: calc(50% - 3px);
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0 var(--theme-var-grid_gap) var(--theme-var-grid_gap) 0;
+  box-sizing: border-box;
+}
+form.pmpro_form .pmpro_member_profile_edit-fields div input {
+  width: 100%;
+  max-width: 100%;
+}
+form.pmpro_form .pmpro_member_profile_edit-fields div .lite {
+  margin-top: 1.6em;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+form.pmpro_form .pmpro_change_password-fields div {
+  margin-bottom: 30px;
+}
+form.pmpro_form .pmpro_submit hr,
+form.pmpro_form .pmpro_checkout hr {
+  display: none;
+}
+form.pmpro_form .pmpro_submit {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+form.pmpro_form #pmpro_processing_message {
+  display: none;
+}
+
+/* Log In 
+--------------------------------------------- */
+.pmpro_login_wrap {
+  margin-bottom: 0;
+}
+.pmpro_login_wrap h2 {
+  margin-top: 0;
+}
+.pmpro_login_wrap hr {
+  display: none;
+}
+.pmpro_login_wrap #loginform p {
+  margin-bottom: 20px;
+}
+.pmpro_login_wrap #loginform label {
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_login_wrap #loginform .login-remember label {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: inherit;
+  position: relative;
+  padding-left: 1.5em;
+  padding-bottom: 0 !important;
+  display: inline-block;
+  vertical-align: top;
+  color: var(--theme-color-text);
+}
+.pmpro_login_wrap #loginform .login-remember label > input[type="checkbox"] {
+  position: static !important;
+  clip: auto;
+  width: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.pmpro_login_wrap #loginform .login-remember label > input[type="checkbox"]:before {
+  content: '';
+  font-family: "fontello";
+  font-size: 7px;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  border: 1px solid var(--theme-color-bd_color);
+  color: var(--theme-color-text_dark);
+  width: 16px;
+  height: 16px;
+  line-height: 15px;
+  position: absolute;
+  z-index: 1;
+  top: 0.45em;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.pmpro_login_wrap #loginform .login-remember label > input[type="checkbox"]:hover:before {
+  border-color: var(--theme-color-text_dark);
+}
+.pmpro_login_wrap #loginform .login-remember label > input[type="checkbox"]:checked:before, .pmpro_login_wrap #loginform .login-remember label > input[type="checkbox"]:checked:before {
+  content: '\e9f6';
+}
+.pmpro_login_wrap #loginform .login-submit {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.pmpro_logged_in_welcome_wrap h3 {
+  margin-top: 0;
+}
+.pmpro_logged_in_welcome_wrap h3 a {
+  display: inline;
+}
+
+.pmpro_lost_password_wrap {
+  margin-bottom: 0;
+}
+.pmpro_lost_password_wrap h2 {
+  margin-top: 0;
+}
+.pmpro_lost_password_wrap hr {
+  display: none;
+}
+.pmpro_lost_password_wrap .pmpro_actions_nav {
+  margin-top: 1.6em;
+}
+
+.pmpro_member_log_out a {
+  margin-top: 10px;
+  display: inline-flex;
+  padding: 18px 40px 19px;
+  color: var(--theme-color-inverse_link);
+  background-color: var(--theme-color-text_link);
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.pmpro_member_log_out a:hover {
+  color: var(--theme-color-inverse_link);
+  background-color: var(--theme-color-text_hover);
+}
+
+/* Messages 
+--------------------------------------------- */
+.pmpro-no-access {
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pmpro_content_message {
+  margin: calc( var(--theme-var-grid_gap) * 2 ) calc( var(--theme-var-grid_gap) / 2 );
+  text-align: center;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_content_message .pmpro_btn,
+.pmpro_content_message a {
+  user-select: auto;
+  margin: 18px 5px 0 !important;
+  color: var(--theme-color-inverse_link) !important;
+  border-color: var(--theme-color-text_link) !important;
+  background-color: var(--theme-color-text_link) !important;
+}
+.pmpro_content_message .pmpro_btn:hover,
+.pmpro_content_message a:hover {
+  color: var(--theme-color-inverse_link) !important;
+  border-color: var(--theme-color-text_hover) !important;
+  background-color: var(--theme-color-text_hover) !important;
+}
+
+.pmpro_message {
+  padding: 15px 20px;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  border: none;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+}
+.pmpro_message strong {
+  font-weight: 700;
+}
+.pmpro_message a {
+  text-decoration: underline;
+}
+.pmpro_message a:hover {
+  text-decoration: none;
+}
+.pmpro_message:first-child {
+  margin-top: 0;
+  margin-bottom: var(--theme-var-grid_gap);
+}
+.pmpro_message:last-child {
+  margin-top: var(--theme-var-grid_gap);
+  margin-bottom: 0;
+}
+.pmpro_message.pmpro_success a, .pmpro_message.pmpro_alert a, .pmpro_message.pmpro_error a {
+  color: currentColor;
+}
+
+#pmpro_message_bottom {
+  margin-bottom: 2em;
+}
+
+/* Invoice 
+--------------------------------------------- */
+.pmpro_invoice_wrap .pmpro_table td a {
+  color: var(--theme-color-text);
+}
+.pmpro_invoice_wrap .pmpro_table td a:hover {
+  color: var(--theme-color-text_dark);
+}
+.pmpro_invoice_wrap h3 {
+  margin-top: 0;
+}
+.pmpro_invoice_wrap hr {
+  display: none;
+  margin: 20px 0 !important;
+}
+.pmpro_invoice_wrap .pmpro_invoice-total p:last-child {
+  margin-bottom: 0;
+}
+.pmpro_invoice_wrap .pmpro_actions_nav {
+  margin-top: 1.6em;
+}
+.pmpro_invoice_wrap .pmpro_actions_nav-left {
+  float: none;
+  width: auto;
+}
+.pmpro_invoice_wrap .pmpro_actions_nav-left + .pmpro_actions_nav-right {
+  float: right;
+}
+
+/* Cancel 
+--------------------------------------------- */
+.pmpro_cancel_wrap h2 {
+  font-size: 2.059em;
+  line-height: 1.086em;
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+.pmpro_cancel_wrap .pmpro_cancel-membership-cancel a {
+  color: var(--theme-color-text);
+}
+.pmpro_cancel_wrap .pmpro_cancel-membership-cancel a:hover {
+  color: var(--theme-color-text_dark);
+}
+
+/* Checkout
+--------------------------------------------- */
+#pmpro_form .pmpro_checkout h2 {
+  font-size: 2.059em;
+  line-height: 1.086em;
+  margin: 0;
+}
+#pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-name {
+  display: inline-block;
+  margin: 0 0.5em 1em 0;
+}
+#pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-msg {
+  margin: 0;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+#pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-msg a {
+  color: var(--theme-color-text_light);
+}
+#pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-msg a:hover {
+  color: var(--theme-color-text_dark);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_name_text {
+  margin-bottom: 1.5em;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--theme-color-text);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_name_text strong {
+  font-weight: 700;
+  color: var(--theme-color-text_dark);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text {
+  margin-bottom: 1.5em;
+  color: var(--theme-color-text_light);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text ul {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text ul li + li {
+  margin-top: 10px;
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_cost_text {
+  margin-bottom: 0.8em;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--theme-color-text);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_cost_text p {
+  margin: 0;
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_cost_text strong {
+  font-weight: 700;
+  color: var(--theme-color-text_dark);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_expiration_text {
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: var(--theme-color-text_light);
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_expiration_text p {
+  margin: 0;
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-field {
+  position: relative;
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-field .pmpro_asterisk {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 5px;
+}
+#pmpro_form .pmpro_checkout .pmpro_checkout-field .pmpro_asterisk abbr {
+  color: var(--theme-color-text_light);
+}
+#pmpro_form .pmpro_checkout strong {
+  font-weight: 700;
+}
+
+.pmpro_checkout_gateway-none #pmpro_form .pmpro_checkout {
+  margin-top: 0;
+}
+.pmpro_checkout_gateway-none #pmpro_form .pmpro_checkout h3 {
+  margin-top: 0;
+}
+
+/* Confirmation */
+.pmpro_confirmation_wrap .pmpro_actions_nav {
+  margin-top: 1em;
+}
+.pmpro_confirmation_wrap .pmpro_invoice_details .pmpro_invoice-total strong,
+.pmpro_confirmation_wrap .pmpro_invoice_details .pmpro_invoice-payment-method strong {
+  font-weight: 700;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_confirmation_wrap .pmpro_invoice_details .pmpro_invoice-total .pmpro_price_part-total {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-color: var(--theme-color-bd_color);
+}
+.pmpro_confirmation_wrap h2 {
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+  font-size: 2.059em;
+  line-height: 1.086em;
+}
+.pmpro_confirmation_wrap ul li {
+  font-weight: 500;
+  color: var(--theme-color-text);
+}
+.pmpro_confirmation_wrap ul li strong {
+  font-weight: 400;
+  color: var(--theme-color-text_light);
+}
+.pmpro_confirmation_wrap hr {
+  display: none;
+}
+
+.pmpro_a-print {
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--theme-color-text_dark);
+}
+.pmpro_a-print:hover {
+  color: var(--theme-color-text_dark);
+}
+
+/*# sourceMappingURL=paid-memberships-pro.css.map */

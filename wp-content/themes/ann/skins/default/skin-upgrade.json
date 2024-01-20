@@ -1,0 +1,22 @@
+{
+    "exclude": {
+        "files": [
+            "skin.jpg",
+            "extra-styles.scss",
+            "extra-styles.css",
+            "extra-styles.css.map",
+            "extra-styles.php",
+        	"skin-setup.php",
+        	"skin-demo-importer.php",
+        	"css/__custom.css",
+        	"theme-specific/trx_addons-layouts.php",
+            "trx_addons/components/theme-panel/importer/export/paid-memberships-pro.txt"
+        ],
+        "folders": [
+            "plugins/paid-memberships-pro",
+        	"theme-specific/theme-about",
+            "css/font-icons",
+        	"languages"
+        ]
+    }
+}

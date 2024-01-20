@@ -1,0 +1,343 @@
+@media (max-width: 1279px) {
+  .pmpro_btn,
+  .pmpro_content_message a,
+  .pmpro_btn.pmpro_btn-submit,
+  .pmpro_btn.pmpro_btn-cancel,
+  .pmpro_member_log_out a {
+    padding: 16px 36px 17px;
+  }
+
+  .pmpro_login_wrap #loginform .login-submit {
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+
+  .pmpro_table + .pmpro_actions_nav {
+    margin-top: 1.2em;
+  }
+
+  #pmpro_account .pmpro_box + .pmpro_box {
+    margin: 50px 0 0;
+  }
+  #pmpro_account .pmpro_box h2 {
+    font-size: 30px;
+    margin-bottom: 0.9em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks {
+    margin-top: 1.2em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile h2 {
+    font-size: 30px;
+    margin-bottom: 0.8em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile > p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile > p + ul {
+    margin-top: 0.5em;
+  }
+
+  .pmpro_cancel_wrap h2 {
+    font-size: 30px;
+    margin-bottom: 0.9em;
+  }
+
+  .pmpro_actionlinks a#pmpro_actionlink-levels {
+    margin-top: 20px;
+  }
+
+  #pmpro_form .pmpro_checkout h2 {
+    font-size: 30px;
+  }
+  #pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-name {
+    margin: 0 0.4em 0.7em 0;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text ul li + li {
+    margin-top: 8px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_name_text {
+    margin-bottom: 1.2em;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text {
+    margin-bottom: 1.2em;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_cost_text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .pmpro_confirmation_wrap h2 {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    font-size: 30px;
+  }
+  .pmpro_confirmation_wrap .pmpro_invoice_details .pmpro_invoice-total .pmpro_price_part-total {
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+
+  .pmpro_invoice_wrap .pmpro_actions_nav {
+    margin-top: 1.2em;
+  }
+
+  .pmpro_message {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 1023px) {
+  form.pmpro_form .pmpro_btn,
+  .pmpro_login_wrap #loginform input[type="submit"] {
+    display: inline-flex;
+    width: auto;
+  }
+
+  form.pmpro_form input[type="text"].input,
+  form.pmpro_form input[type="password"].input,
+  .pmpro_login_wrap form#loginform input[type="text"].input,
+  .pmpro_login_wrap form#loginform input[type="password"].input {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .pmpro_btn,
+  .pmpro_content_message a,
+  .pmpro_btn.pmpro_btn-submit,
+  .pmpro_btn.pmpro_btn-cancel,
+  .pmpro_member_log_out a {
+    font-size: 14px;
+    padding: 14px 32px 15px;
+  }
+
+  .pmpro_table {
+    table-layout: auto;
+  }
+  .pmpro_table th {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0.6em 1em;
+  }
+  .pmpro_table td {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0.8em 1em;
+  }
+  .pmpro_table .pmpro_btn {
+    font-size: 13px;
+    padding: 8px 18px 9px;
+  }
+  .pmpro_table + .pmpro_actions_nav {
+    margin-top: 0.8em;
+  }
+
+  .pmpro_actions_nav {
+    gap: 15px;
+  }
+
+  .pmpro_actionlinks a#pmpro_actionlink-levels {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .pmpro_actionlinks a,
+  .pmpro_actions_nav a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .pmpro_login_wrap #loginform label {
+    margin-bottom: 5px;
+  }
+  .pmpro_login_wrap #loginform .login-remember label {
+    font-size: 14px;
+  }
+  .pmpro_login_wrap #loginform .login-submit {
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+
+  #pmpro_account .pmpro_box + .pmpro_box {
+    margin: 40px 0 0;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks {
+    gap: 10px;
+    margin-top: 0.8em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks a {
+    font-size: 14px;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile ul {
+    font-size: 15px;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile ul > li + li {
+    margin-top: 0;
+  }
+  #pmpro_account .pmpro_box h2 {
+    font-size: 22px;
+    margin-bottom: 0.8em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile h2 {
+    font-size: 22px;
+    margin-bottom: 0.7em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile > p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile > p + ul {
+    margin-top: 0.2em;
+  }
+
+  .pmpro_cancel_wrap h2 {
+    font-size: 22px;
+    margin-bottom: 0.8em;
+  }
+
+  #pmpro_form .pmpro_checkout h2 {
+    font-size: 22px;
+  }
+  #pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-name {
+    margin: 0 0.3em 0.6em 0;
+  }
+  #pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-msg {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text ul li + li {
+    margin-top: 5px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_name_text {
+    margin-bottom: 0.8em;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text {
+    margin-bottom: 0.8em;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_cost_text {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  #pmpro_form .pmpro_checkout#pmpro_user_fields h2 + .pmpro_checkout-fields {
+    margin-top: 1em;
+  }
+
+  form.pmpro_form label {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+  form.pmpro_form .pmpro_member_profile_edit-fields div {
+    width: 100%;
+  }
+
+  .pmpro_confirmation_wrap h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 22px;
+  }
+
+  .pmpro_invoice_wrap .pmpro_actions_nav {
+    margin-top: 0.8em;
+  }
+}
+@media (max-width: 479px) {
+  .pmpro_actionlinks a#pmpro_actionlink-levels {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  .pmpro_table + .pmpro_actions_nav {
+    margin-top: 0.6em;
+  }
+  .pmpro_table .pmpro_actionlinks {
+    margin: 0;
+  }
+  .pmpro_table th {
+    padding: 0.6em;
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .pmpro_table td {
+    padding: 0.6em;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .pmpro_table .pmpro_btn {
+    font-size: 12px;
+    padding: 6px 13px 7px;
+  }
+
+  #pmpro_account .pmpro_box + .pmpro_box {
+    margin: 25px 0 0;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile .pmpro_actionlinks {
+    gap: 6px;
+    margin-top: 0.6em;
+  }
+  #pmpro_account .pmpro_box h2 {
+    font-size: 20px;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile h2 {
+    font-size: 20px;
+    margin-bottom: 0.6em;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile > p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #pmpro_account .pmpro_box#pmpro_account-profile > p + ul {
+    margin-top: 0.1em;
+  }
+
+  .pmpro_cancel_wrap h2 {
+    font-size: 20px;
+  }
+
+  #pmpro_form .pmpro_checkout h2 {
+    font-size: 20px;
+  }
+  #pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-name {
+    margin: 0 0.2em 0.5em 0;
+  }
+  #pmpro_form .pmpro_checkout h2 span.pmpro_checkout-h2-msg {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text ul {
+    font-size: 15px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text ul li + li {
+    margin-top: 3px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_name_text {
+    margin-bottom: 0.7em;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields .pmpro_level_description_text {
+    margin-bottom: 0.7em;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_cost_text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #pmpro_form .pmpro_checkout .pmpro_checkout-fields #pmpro_level_cost .pmpro_level_expiration_text {
+    font-size: 15px;
+  }
+
+  .pmpro_confirmation_wrap h2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    font-size: 20px;
+  }
+
+  .pmpro_invoice_wrap .pmpro_actions_nav {
+    margin-top: 0.6em;
+  }
+}
+
+/*# sourceMappingURL=paid-memberships-pro-responsive.css.map */
